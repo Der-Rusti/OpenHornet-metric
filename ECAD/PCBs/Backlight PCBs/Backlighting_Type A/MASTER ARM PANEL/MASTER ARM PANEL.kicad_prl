@@ -67,36 +67,17 @@
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
+  },
   "meta": {
     "filename": "MASTER ARM PANEL.kicad_prl",
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "MASTER ARM PANEL.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": -2568,
-          "pos_y": -3,
-          "size_x": 2576,
-          "size_y": 1416
-        }
-      },
-      {
-        "name": "MASTER ARM PANEL.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": true,
-          "pos_x": -8,
-          "pos_y": -8,
-          "size_x": 2576,
-          "size_y": 1416
-        }
-      }
-    ]
+    "files": []
   }
 }

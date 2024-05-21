@@ -22,7 +22,7 @@ uint32_t nvis_A = strip.Color(51, 102, 0);
 
 void setup() {
   strip.begin();
-  strip.setBrightness(255);
+  strip.setBrightness(50);
   strip.show(); // Initialize all pixels to 'off'
 }
 
