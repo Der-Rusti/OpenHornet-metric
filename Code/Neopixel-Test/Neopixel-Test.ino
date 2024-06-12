@@ -5,7 +5,7 @@
 #define LED_PIN    6
 
 // How many NeoPixels are attached to the Arduino?
-#define LED_COUNT 29
+#define LED_COUNT 24
 
 // Declare our NeoPixel strip object:
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
@@ -22,13 +22,14 @@ uint32_t nvis_A = strip.Color(51, 102, 0);
 
 void setup() {
   strip.begin();
-  strip.setBrightness(50);
+  strip.setBrightness(255);
   strip.show(); // Initialize all pixels to 'off'
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  //strip.setPixelColor(n, red, green, blue);
-  strip.fill (nvis_A);
+  strip.setPixelColor(0, 255, 0, 0);  
+  strip.setPixelColor(1, 255, 0, 0);
+  //strip.fill (nvis_A);
   strip.show();
 }
