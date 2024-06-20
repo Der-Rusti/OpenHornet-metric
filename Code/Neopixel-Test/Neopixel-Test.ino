@@ -18,7 +18,12 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 //   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
 
-uint32_t nvis_A = strip.Color(51, 102, 0);
+uint32_t nvis_green_A = strip.Color(51, 102, 0);
+uint32_t nvis_green_B = strip.Color(85, 138, 0);
+uint32_t nvis_yellow = strip.Color(255, 100, 0);
+uint32_t nvis_red = strip.Color(158, 4, 4);
+uint32_t nvis_white = strip.Color(176, 176, 176);
+
 
 void setup() {
   strip.begin();
@@ -28,8 +33,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  strip.setPixelColor(0, 255, 0, 0);  
-  strip.setPixelColor(1, 255, 0, 0);
-  //strip.fill (nvis_A);
+  //strip.setPixelColor(0, 255, 0, 0);  
+  //strip.setPixelColor(1, 255, 0, 0);
+  strip.fill (nvis_yellow);
   strip.show();
 }
